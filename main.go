@@ -13,13 +13,10 @@ func main() {
 
 	http.HandleFunc("/", homeHandler)
 
-	// Define the port to listen on
-
 	fmt.Printf("Server is running on http://localhost:8080")
 
-	// Start the server
 	err := http.ListenAndServe(":8080", nil)
 	if err != nil {
-		fmt.Printf("Error starting server: 8080", err)
+		fmt.Print("Error starting server: 8080", err)
 	}
 }
