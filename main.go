@@ -2,14 +2,19 @@ package main
 
 import (
 	"fmt"
+	"html/template"
 	"net/http"
 )
 
+var tpl *template.Template
+
 func homeHandler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Welcome to the Groupie Tracker!")
+	tpl.ExecuteTemplate(w , "home.html", nil )
 }
 
 func main() {
+
+	tpl = template.Must(template.ParseGlob("templates/*.html"))
 
 	http.HandleFunc("/", homeHandler)
 
