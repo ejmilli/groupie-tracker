@@ -1,0 +1,14 @@
+/* app.css */
+
+/* components */
+@import url('header.css');
+@import url('footer.css');
+
+/* theme */
+@import url('base.css');
+@import url('light-theme');
+@import url('dark-theme');
+
+/* pages */
+@import url('bands.css');
+@import url('home.css');
