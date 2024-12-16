@@ -9,7 +9,7 @@ import (
 var tpl *template.Template
 
 func homeHandler(w http.ResponseWriter, r *http.Request) {
-	tpl.ExecuteTemplate(w , "home.html", nil )
+	tpl.ExecuteTemplate(w, "home", nil)
 }
 
 func main() {
