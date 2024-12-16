@@ -17,6 +17,6 @@ func main() {
 
 	err := http.ListenAndServe(":10000", nil)
 	if err != nil {
-		fmt.Print("Error starting server: 8080", err)
+		fmt.Print("Error starting server: 10000", err)
 	}
 }
