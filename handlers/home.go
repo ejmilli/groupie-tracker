@@ -1,7 +1,10 @@
 package handlers
 
-import "net/http"
+import (
+	"groupie-tracker/models"
+	"net/http"
+)
 
 func HomeHandler(w http.ResponseWriter, r *http.Request) {
-	tpl.ExecuteTemplate(w, "home", nil)
+	models.Tmpl.ExecuteTemplate(w, "home", nil)
 }

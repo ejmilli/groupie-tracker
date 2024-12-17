@@ -3,15 +3,14 @@ package main
 import (
 	"fmt"
 	"groupie-tracker/handlers"
+	"groupie-tracker/models"
 	"html/template"
 	"net/http"
 )
 
-var tpl *template.Template
-
 func main() {
 
-	tpl = template.Must(template.ParseGlob("templates/*.html"))
+	models.Tmpl = template.Must(template.ParseGlob("templates/*.html"))
 
 	http.HandleFunc("/", handlers.HomeHandler)
 
