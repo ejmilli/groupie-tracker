@@ -1,4 +1,4 @@
-package main
+package handlers
 
 import (
 	"encoding/json"
@@ -18,7 +18,7 @@ type Artist struct {
 // Global variable to store artists data
 var artists []Artist
 
-func fetchArtistsFromAPI() error {
+func FetchArtistsFromAPI() error {
 	// API URL to fetch data
 	apiartist := "https://groupietrackers.herokuapp.com/api/artists"
 

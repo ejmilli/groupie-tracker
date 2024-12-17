@@ -1,4 +1,4 @@
-package main
+package handlers
 
 import (
 	"encoding/json"
@@ -21,6 +21,8 @@ func HandleArtists(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(artists)
 }
+
+
 func HomeHandler(w http.ResponseWriter, r *http.Request) {
 	models.Tmpl.ExecuteTemplate(w, "home", nil)
 }
