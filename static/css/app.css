@@ -1,14 +1,14 @@
 /* app.css */
 
 /* components */
-@import url('header.css');
-@import url('footer.css');
+@import url('components/header.css');
+@import url('components/footer.css');
 
 /* theme */
-@import url('base.css');
-@import url('light-theme');
-@import url('dark-theme');
+@import url('theme/base.css');
+@import url('theme/light-theme.css');
+@import url('theme/dark-theme.css');
 
 /* pages */
-@import url('bands.css');
-@import url('home.css');
+@import url('pages/bands.css');
+@import url('pages/home.css');

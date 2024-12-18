@@ -1,3 +1,12 @@
-body {
+:root {
+    --radius: 60px;
+}
+body, h1, h2, h3, ul, li {
     margin: 0px;
+    padding: 0px;
+    font-family: monospace;
+}
+
+#header-container, main {
+    margin: 0px 100px;
 }
